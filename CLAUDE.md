@@ -36,3 +36,4 @@ async def new_tool(param: str) -> str:
     """Docstring becomes the tool description."""
     # implementation
 ```
+
