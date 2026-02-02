@@ -3,6 +3,7 @@ MCP Weather Server
 
 A Model Context Protocol server that exposes weather data via the wttr.in API.
 """
+# add commonts here to test update version of this project
 
 import httpx
 from mcp.server.fastmcp import FastMCP
@@ -10,7 +11,6 @@ from mcp.server.fastmcp import FastMCP
 # Initialize the MCP server with the name "weather"
 # This name is used to identify the server in client configurations
 mcp = FastMCP("weather")
-
 
 @mcp.tool()
 async def get_weather(city: str) -> str:
@@ -31,3 +31,4 @@ async def get_weather(city: str) -> str:
 if __name__ == "__main__":
     # Start the MCP server using stdio transport (default)
     mcp.run()
+
